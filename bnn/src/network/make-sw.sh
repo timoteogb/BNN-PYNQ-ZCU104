@@ -85,7 +85,7 @@ if [[ ("$BOARD" == "Pynq-Z1") || ("$BOARD" == "Pynq-Z2") ]]; then
 elif [[ ("$BOARD" == "Ultra96") ]]; then
   DEF_BOARD="ULTRA"
   PLATFORM="ultra96"
-elif [[ ("$BOARD" == "zcu104") ]]; then
+elif [[ ("$BOARD" == "ZCU104") ]]; then
   DEF_BOARD="PYNQ"
   PLATFORM="zcu104"
 else
