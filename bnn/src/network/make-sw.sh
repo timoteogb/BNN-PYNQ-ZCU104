@@ -60,7 +60,8 @@ fi
 if [ -z "$VIVADOHLS_INCLUDE_PATH" ]; then
   echo "Need to set VIVADOHLS_INCLUDE_PATH to rebuild from source"
   echo "The pre-compiled shared objects will be included"
-  exit 1
+  echo "Including Vivado 2018.3 Include files provided by BNN repo. . ."
+  VIVADOHLS_INCLUDE_PATH=${XILINX_BNN_ROOT}/library/hls_include/
 fi  
 
 OLD_DIR=$(pwd)
