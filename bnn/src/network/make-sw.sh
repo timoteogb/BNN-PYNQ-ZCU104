@@ -54,8 +54,7 @@ NETWORK=$1
 RUNTIME=$2
 
 if [ -z "$XILINX_BNN_ROOT" ]; then
-  echo "Need to set XILINX_BNN_ROOT"
-  exit 1
+  export XILINX_BNN_ROOT="$( ( cd "$(dirname "$0")/.."; pwd) )"
 fi
 
 if [ -z "$VIVADOHLS_INCLUDE_PATH" ]; then
