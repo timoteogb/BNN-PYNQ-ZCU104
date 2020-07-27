@@ -73,8 +73,8 @@ set_property -dict [list CONFIG.PSU__USE__M_AXI_GP0 {1} CONFIG.PSU__USE__S_AXI_G
 # instantiate jam
 create_bd_cell -type ip -vlnv xilinx.com:hls:BlackBoxJam:1.0 BlackBoxJam_0
 
-apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/zynq_ultra_ps_e_0/pl_clk0 (300 MHz)} Clk_slave {/zynq_ultra_ps_e_0/pl_clk0 (300 MHz)} Clk_xbar {/zynq_ultra_ps_e_0/pl_clk0 (300 MHz)} Master {/zynq_ultra_ps_e_0/M_AXI_HPM0_FPD} Slave {/BlackBoxJam_0/s_axi_control} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins BlackBoxJam_0/s_axi_control]
-apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/zynq_ultra_ps_e_0/pl_clk0 (300 MHz)} Clk_slave {/zynq_ultra_ps_e_0/pl_clk0 (300 MHz)} Clk_xbar {/zynq_ultra_ps_e_0/pl_clk0 (300 MHz)} Master {/BlackBoxJam_0/m_axi_hostmem} Slave {/zynq_ultra_ps_e_0/S_AXI_HP0_FPD} intc_ip {Auto} master_apm {0}}  [get_bd_intf_pins zynq_ultra_ps_e_0/S_AXI_HP0_FPD]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/zynq_ultra_ps_e_0/pl_clk2 (300 MHz)} Clk_slave {/zynq_ultra_ps_e_0/pl_clk2 (300 MHz)} Clk_xbar {/zynq_ultra_ps_e_0/pl_clk2 (300 MHz)} Master {/zynq_ultra_ps_e_0/M_AXI_HPM0_FPD} Slave {/BlackBoxJam_0/s_axi_control} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins BlackBoxJam_0/s_axi_control]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/zynq_ultra_ps_e_0/pl_clk2 (300 MHz)} Clk_slave {/zynq_ultra_ps_e_0/pl_clk2 (300 MHz)} Clk_xbar {/zynq_ultra_ps_e_0/pl_clk2 (300 MHz)} Master {/BlackBoxJam_0/m_axi_hostmem} Slave {/zynq_ultra_ps_e_0/S_AXI_HP0_FPD} intc_ip {Auto} master_apm {0}}  [get_bd_intf_pins zynq_ultra_ps_e_0/S_AXI_HP0_FPD]
 
 # # create HDL wrapper for the block design
 save_bd_design
