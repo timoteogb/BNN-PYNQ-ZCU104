@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Jul 23 16:07:55 2020" VIVADOVERSION="2018.3">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Jul 28 00:35:15 2020" VIVADOVERSION="2018.3">
 
   <SYSTEMINFO ARCH="zynquplus" BOARD="xilinx.com:zcu104:part0:1.1" DEVICE="xczu7ev" NAME="procsys" PACKAGE="ffvc1156" SPEEDGRADE="-2"/>
 
@@ -8,7 +8,7 @@
   <EXTERNALINTERFACES/>
 
   <MODULES>
-    <MODULE COREREVISION="2007231604" FULLNAME="/BlackBoxJam_0" HWVERSION="1.0" INSTANCE="BlackBoxJam_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="BlackBoxJam" VLNV="xilinx.com:hls:BlackBoxJam:1.0">
+    <MODULE COREREVISION="2007280003" FULLNAME="/BlackBoxJam_0" HWVERSION="1.0" INSTANCE="BlackBoxJam_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="BlackBoxJam" VLNV="xilinx.com:hls:BlackBoxJam:1.0">
       <DOCUMENTS/>
       <ADDRESSBLOCKS>
         <ADDRESSBLOCK ACCESS="read-write" INTERFACE="s_axi_control" NAME="Reg" RANGE="65536" USAGE="register">
@@ -568,9 +568,9 @@
             <CONNECTION INSTANCE="ps8_0_axi_periph" PORT="M00_AXI_rready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT CLKFREQUENCY="300000000" DIR="I" NAME="ap_clk" SIGIS="clk" SIGNAME="zynq_ultra_ps_e_0_pl_clk0">
+        <PORT CLKFREQUENCY="300000000" DIR="I" NAME="ap_clk" SIGIS="clk" SIGNAME="zynq_ultra_ps_e_0_pl_clk2">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="zynq_ultra_ps_e_0" PORT="pl_clk0"/>
+            <CONNECTION INSTANCE="zynq_ultra_ps_e_0" PORT="pl_clk2"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" NAME="ap_rst_n" SIGIS="rst" SIGNAME="rst_ps8_0_300M_peripheral_aresetn">
@@ -775,7 +775,7 @@
           <PARAMETER NAME="NUM_WRITE_OUTSTANDING" VALUE="1"/>
           <PARAMETER NAME="MAX_BURST_LENGTH" VALUE="1"/>
           <PARAMETER NAME="PHASE" VALUE="0.000"/>
-          <PARAMETER NAME="CLK_DOMAIN" VALUE="procsys_zynq_ultra_ps_e_0_0_pl_clk0"/>
+          <PARAMETER NAME="CLK_DOMAIN" VALUE="procsys_zynq_ultra_ps_e_0_0_pl_clk2"/>
           <PARAMETER NAME="NUM_READ_THREADS" VALUE="4"/>
           <PARAMETER NAME="NUM_WRITE_THREADS" VALUE="4"/>
           <PARAMETER NAME="RUSER_BITS_PER_BYTE" VALUE="0"/>
@@ -829,7 +829,7 @@
           <PARAMETER NAME="HAS_BRESP" VALUE="1"/>
           <PARAMETER NAME="HAS_RRESP" VALUE="1"/>
           <PARAMETER NAME="PHASE" VALUE="0.000"/>
-          <PARAMETER NAME="CLK_DOMAIN" VALUE="procsys_zynq_ultra_ps_e_0_0_pl_clk0"/>
+          <PARAMETER NAME="CLK_DOMAIN" VALUE="procsys_zynq_ultra_ps_e_0_0_pl_clk2"/>
           <PARAMETER NAME="NUM_READ_THREADS" VALUE="1"/>
           <PARAMETER NAME="NUM_WRITE_THREADS" VALUE="1"/>
           <PARAMETER NAME="RUSER_BITS_PER_BYTE" VALUE="0"/>
@@ -897,9 +897,9 @@
         <PARAMETER NAME="EDK_IPTYPE" VALUE="BUS"/>
       </PARAMETERS>
       <PORTS>
-        <PORT CLKFREQUENCY="300000000" DIR="I" NAME="aclk" SIGIS="clk" SIGNAME="zynq_ultra_ps_e_0_pl_clk0">
+        <PORT CLKFREQUENCY="300000000" DIR="I" NAME="aclk" SIGIS="clk" SIGNAME="zynq_ultra_ps_e_0_pl_clk2">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="zynq_ultra_ps_e_0" PORT="pl_clk0"/>
+            <CONNECTION INSTANCE="zynq_ultra_ps_e_0" PORT="pl_clk2"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" NAME="aresetn" SIGIS="rst" SIGNAME="rst_ps8_0_300M_peripheral_aresetn">
@@ -1265,7 +1265,7 @@
           <PARAMETER NAME="NUM_WRITE_OUTSTANDING" VALUE="16"/>
           <PARAMETER NAME="MAX_BURST_LENGTH" VALUE="256"/>
           <PARAMETER NAME="PHASE" VALUE="0.000"/>
-          <PARAMETER NAME="CLK_DOMAIN" VALUE="procsys_zynq_ultra_ps_e_0_0_pl_clk0"/>
+          <PARAMETER NAME="CLK_DOMAIN" VALUE="procsys_zynq_ultra_ps_e_0_0_pl_clk2"/>
           <PARAMETER NAME="NUM_READ_THREADS" VALUE="1"/>
           <PARAMETER NAME="NUM_WRITE_THREADS" VALUE="1"/>
           <PARAMETER NAME="RUSER_BITS_PER_BYTE" VALUE="0"/>
@@ -1333,7 +1333,7 @@
           <PARAMETER NAME="NUM_WRITE_OUTSTANDING" VALUE="16"/>
           <PARAMETER NAME="MAX_BURST_LENGTH" VALUE="128"/>
           <PARAMETER NAME="PHASE" VALUE="0.000"/>
-          <PARAMETER NAME="CLK_DOMAIN" VALUE="procsys_zynq_ultra_ps_e_0_0_pl_clk0"/>
+          <PARAMETER NAME="CLK_DOMAIN" VALUE="procsys_zynq_ultra_ps_e_0_0_pl_clk2"/>
           <PARAMETER NAME="NUM_READ_THREADS" VALUE="1"/>
           <PARAMETER NAME="NUM_WRITE_THREADS" VALUE="1"/>
           <PARAMETER NAME="RUSER_BITS_PER_BYTE" VALUE="0"/>
@@ -1700,9 +1700,9 @@
         <PARAMETER NAME="EDK_IPTYPE" VALUE="BUS"/>
       </PARAMETERS>
       <PORTS>
-        <PORT DIR="I" NAME="ACLK" SIGIS="clk" SIGNAME="zynq_ultra_ps_e_0_pl_clk0">
+        <PORT DIR="I" NAME="ACLK" SIGIS="clk" SIGNAME="zynq_ultra_ps_e_0_pl_clk2">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="zynq_ultra_ps_e_0" PORT="pl_clk0"/>
+            <CONNECTION INSTANCE="zynq_ultra_ps_e_0" PORT="pl_clk2"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" NAME="ARESETN" SIGIS="rst" SIGNAME="rst_ps8_0_300M_peripheral_aresetn">
@@ -1710,9 +1710,9 @@
             <CONNECTION INSTANCE="rst_ps8_0_300M" PORT="peripheral_aresetn"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="S00_ACLK" SIGIS="clk" SIGNAME="zynq_ultra_ps_e_0_pl_clk0">
+        <PORT DIR="I" NAME="S00_ACLK" SIGIS="clk" SIGNAME="zynq_ultra_ps_e_0_pl_clk2">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="zynq_ultra_ps_e_0" PORT="pl_clk0"/>
+            <CONNECTION INSTANCE="zynq_ultra_ps_e_0" PORT="pl_clk2"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" NAME="S00_ARESETN" SIGIS="rst" SIGNAME="rst_ps8_0_300M_peripheral_aresetn">
@@ -1720,9 +1720,9 @@
             <CONNECTION INSTANCE="rst_ps8_0_300M" PORT="peripheral_aresetn"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="M00_ACLK" SIGIS="clk" SIGNAME="zynq_ultra_ps_e_0_pl_clk0">
+        <PORT DIR="I" NAME="M00_ACLK" SIGIS="clk" SIGNAME="zynq_ultra_ps_e_0_pl_clk2">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="zynq_ultra_ps_e_0" PORT="pl_clk0"/>
+            <CONNECTION INSTANCE="zynq_ultra_ps_e_0" PORT="pl_clk2"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" NAME="M00_ARESETN" SIGIS="rst" SIGNAME="rst_ps8_0_300M_peripheral_aresetn">
@@ -2142,9 +2142,9 @@
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
-        <PORT CLKFREQUENCY="300000000" DIR="I" NAME="slowest_sync_clk" SIGIS="clk" SIGNAME="zynq_ultra_ps_e_0_pl_clk0">
+        <PORT CLKFREQUENCY="300000000" DIR="I" NAME="slowest_sync_clk" SIGIS="clk" SIGNAME="zynq_ultra_ps_e_0_pl_clk2">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="zynq_ultra_ps_e_0" PORT="pl_clk0"/>
+            <CONNECTION INSTANCE="zynq_ultra_ps_e_0" PORT="pl_clk2"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" NAME="ext_reset_in" SIGIS="rst" SIGNAME="zynq_ultra_ps_e_0_pl_resetn0">
@@ -2209,9 +2209,9 @@
         <PARAMETER NAME="C_EN_FIFO_ENET2" VALUE="0"/>
         <PARAMETER NAME="C_EN_FIFO_ENET3" VALUE="0"/>
         <PARAMETER NAME="C_PL_CLK0_BUF" VALUE="TRUE"/>
-        <PARAMETER NAME="C_PL_CLK1_BUF" VALUE="FALSE"/>
-        <PARAMETER NAME="C_PL_CLK2_BUF" VALUE="FALSE"/>
-        <PARAMETER NAME="C_PL_CLK3_BUF" VALUE="FALSE"/>
+        <PARAMETER NAME="C_PL_CLK1_BUF" VALUE="TRUE"/>
+        <PARAMETER NAME="C_PL_CLK2_BUF" VALUE="TRUE"/>
+        <PARAMETER NAME="C_PL_CLK3_BUF" VALUE="TRUE"/>
         <PARAMETER NAME="C_TRACE_PIPELINE_WIDTH" VALUE="8"/>
         <PARAMETER NAME="C_EN_EMIO_TRACE" VALUE="0"/>
         <PARAMETER NAME="C_TRACE_DATA_WIDTH" VALUE="32"/>
@@ -2260,9 +2260,9 @@
         <PARAMETER NAME="PSU__ENET1__PERIPHERAL__IO" VALUE="&lt;Select>"/>
         <PARAMETER NAME="PSU__ENET1__GRP_MDIO__ENABLE" VALUE="0"/>
         <PARAMETER NAME="PSU__FPGA_PL0_ENABLE" VALUE="1"/>
-        <PARAMETER NAME="PSU__FPGA_PL1_ENABLE" VALUE="0"/>
-        <PARAMETER NAME="PSU__FPGA_PL2_ENABLE" VALUE="0"/>
-        <PARAMETER NAME="PSU__FPGA_PL3_ENABLE" VALUE="0"/>
+        <PARAMETER NAME="PSU__FPGA_PL1_ENABLE" VALUE="1"/>
+        <PARAMETER NAME="PSU__FPGA_PL2_ENABLE" VALUE="1"/>
+        <PARAMETER NAME="PSU__FPGA_PL3_ENABLE" VALUE="1"/>
         <PARAMETER NAME="PSU__ENET1__GRP_MDIO__IO" VALUE="&lt;Select>"/>
         <PARAMETER NAME="PSU__ENET2__PERIPHERAL__ENABLE" VALUE="0"/>
         <PARAMETER NAME="PSU__ENET2__FIFO__ENABLE" VALUE="0"/>
@@ -3273,9 +3273,9 @@
         <PARAMETER NAME="PSU__SATA__LANE1__ENABLE" VALUE="1"/>
         <PARAMETER NAME="PSU__SATA__LANE1__IO" VALUE="GT Lane3"/>
         <PARAMETER NAME="PSU__CRF_APB__PCIE_REF_CTRL__DIVISOR0" VALUE="6"/>
-        <PARAMETER NAME="PSU__CRL_APB__PL0_REF_CTRL__DIVISOR0" VALUE="5"/>
-        <PARAMETER NAME="PSU__CRL_APB__PL1_REF_CTRL__DIVISOR0" VALUE="4"/>
-        <PARAMETER NAME="PSU__CRL_APB__PL2_REF_CTRL__DIVISOR0" VALUE="4"/>
+        <PARAMETER NAME="PSU__CRL_APB__PL0_REF_CTRL__DIVISOR0" VALUE="15"/>
+        <PARAMETER NAME="PSU__CRL_APB__PL1_REF_CTRL__DIVISOR0" VALUE="60"/>
+        <PARAMETER NAME="PSU__CRL_APB__PL2_REF_CTRL__DIVISOR0" VALUE="5"/>
         <PARAMETER NAME="PSU__CRL_APB__PL3_REF_CTRL__DIVISOR0" VALUE="4"/>
         <PARAMETER NAME="PSU__CRL_APB__PL0_REF_CTRL__DIVISOR1" VALUE="1"/>
         <PARAMETER NAME="PSU__CRL_APB__PL1_REF_CTRL__DIVISOR1" VALUE="1"/>
@@ -3370,9 +3370,9 @@
         <PARAMETER NAME="PSU__CRF_APB__SATA_REF_CTRL__SRCSEL" VALUE="IOPLL"/>
         <PARAMETER NAME="PSU__CRF_APB__PCIE_REF_CTRL__SRCSEL" VALUE="IOPLL"/>
         <PARAMETER NAME="PSU__CRL_APB__PL0_REF_CTRL__SRCSEL" VALUE="IOPLL"/>
-        <PARAMETER NAME="PSU__CRL_APB__PL1_REF_CTRL__SRCSEL" VALUE="RPLL"/>
-        <PARAMETER NAME="PSU__CRL_APB__PL2_REF_CTRL__SRCSEL" VALUE="RPLL"/>
-        <PARAMETER NAME="PSU__CRL_APB__PL3_REF_CTRL__SRCSEL" VALUE="RPLL"/>
+        <PARAMETER NAME="PSU__CRL_APB__PL1_REF_CTRL__SRCSEL" VALUE="IOPLL"/>
+        <PARAMETER NAME="PSU__CRL_APB__PL2_REF_CTRL__SRCSEL" VALUE="IOPLL"/>
+        <PARAMETER NAME="PSU__CRL_APB__PL3_REF_CTRL__SRCSEL" VALUE="IOPLL"/>
         <PARAMETER NAME="PSU__CRF_APB__GDMA_REF_CTRL__SRCSEL" VALUE="APLL"/>
         <PARAMETER NAME="PSU__CRF_APB__DPDMA_REF_CTRL__SRCSEL" VALUE="APLL"/>
         <PARAMETER NAME="PSU__CRF_APB__TOPSW_MAIN_CTRL__SRCSEL" VALUE="DPLL"/>
@@ -3432,9 +3432,9 @@
         <PARAMETER NAME="PSU__OVERRIDE__BASIC_CLOCK" VALUE="0"/>
         <PARAMETER NAME="PSU__DLL__ISUSED" VALUE="1"/>
         <PARAMETER NAME="PSU__PL_CLK0_BUF" VALUE="TRUE"/>
-        <PARAMETER NAME="PSU__PL_CLK1_BUF" VALUE="FALSE"/>
-        <PARAMETER NAME="PSU__PL_CLK2_BUF" VALUE="FALSE"/>
-        <PARAMETER NAME="PSU__PL_CLK3_BUF" VALUE="FALSE"/>
+        <PARAMETER NAME="PSU__PL_CLK1_BUF" VALUE="TRUE"/>
+        <PARAMETER NAME="PSU__PL_CLK2_BUF" VALUE="TRUE"/>
+        <PARAMETER NAME="PSU__PL_CLK3_BUF" VALUE="TRUE"/>
         <PARAMETER NAME="PSU__CRF_APB__APLL_CTRL__FRACFREQ" VALUE="27.138"/>
         <PARAMETER NAME="PSU__CRF_APB__VPLL_CTRL__FRACFREQ" VALUE="27.138"/>
         <PARAMETER NAME="PSU__CRF_APB__DPLL_CTRL__FRACFREQ" VALUE="27.138"/>
@@ -3465,10 +3465,10 @@
         <PARAMETER NAME="PSU__CRF_APB__AFI5_REF_CTRL__ACT_FREQMHZ" VALUE="667"/>
         <PARAMETER NAME="PSU__CRF_APB__SATA_REF_CTRL__ACT_FREQMHZ" VALUE="250.000000"/>
         <PARAMETER NAME="PSU__CRF_APB__PCIE_REF_CTRL__ACT_FREQMHZ" VALUE="250"/>
-        <PARAMETER NAME="PSU__CRL_APB__PL0_REF_CTRL__ACT_FREQMHZ" VALUE="300.000000"/>
-        <PARAMETER NAME="PSU__CRL_APB__PL1_REF_CTRL__ACT_FREQMHZ" VALUE="100"/>
-        <PARAMETER NAME="PSU__CRL_APB__PL2_REF_CTRL__ACT_FREQMHZ" VALUE="100"/>
-        <PARAMETER NAME="PSU__CRL_APB__PL3_REF_CTRL__ACT_FREQMHZ" VALUE="100"/>
+        <PARAMETER NAME="PSU__CRL_APB__PL0_REF_CTRL__ACT_FREQMHZ" VALUE="100.000000"/>
+        <PARAMETER NAME="PSU__CRL_APB__PL1_REF_CTRL__ACT_FREQMHZ" VALUE="25.000000"/>
+        <PARAMETER NAME="PSU__CRL_APB__PL2_REF_CTRL__ACT_FREQMHZ" VALUE="300.000000"/>
+        <PARAMETER NAME="PSU__CRL_APB__PL3_REF_CTRL__ACT_FREQMHZ" VALUE="375.000000"/>
         <PARAMETER NAME="PSU__CRF_APB__GDMA_REF_CTRL__ACT_FREQMHZ" VALUE="600.000000"/>
         <PARAMETER NAME="PSU__CRF_APB__DPDMA_REF_CTRL__ACT_FREQMHZ" VALUE="600.000000"/>
         <PARAMETER NAME="PSU__CRF_APB__TOPSW_MAIN_CTRL__ACT_FREQMHZ" VALUE="525.000000"/>
@@ -3526,10 +3526,10 @@
         <PARAMETER NAME="PSU__CRF_APB__AFI5_REF_CTRL__FREQMHZ" VALUE="667"/>
         <PARAMETER NAME="PSU__CRF_APB__SATA_REF_CTRL__FREQMHZ" VALUE="250"/>
         <PARAMETER NAME="PSU__CRF_APB__PCIE_REF_CTRL__FREQMHZ" VALUE="250"/>
-        <PARAMETER NAME="PSU__CRL_APB__PL0_REF_CTRL__FREQMHZ" VALUE="300"/>
-        <PARAMETER NAME="PSU__CRL_APB__PL1_REF_CTRL__FREQMHZ" VALUE="100"/>
-        <PARAMETER NAME="PSU__CRL_APB__PL2_REF_CTRL__FREQMHZ" VALUE="100"/>
-        <PARAMETER NAME="PSU__CRL_APB__PL3_REF_CTRL__FREQMHZ" VALUE="100"/>
+        <PARAMETER NAME="PSU__CRL_APB__PL0_REF_CTRL__FREQMHZ" VALUE="100"/>
+        <PARAMETER NAME="PSU__CRL_APB__PL1_REF_CTRL__FREQMHZ" VALUE="25"/>
+        <PARAMETER NAME="PSU__CRL_APB__PL2_REF_CTRL__FREQMHZ" VALUE="300"/>
+        <PARAMETER NAME="PSU__CRL_APB__PL3_REF_CTRL__FREQMHZ" VALUE="375"/>
         <PARAMETER NAME="PSU__CRF_APB__GDMA_REF_CTRL__FREQMHZ" VALUE="600"/>
         <PARAMETER NAME="PSU__CRF_APB__DPDMA_REF_CTRL__FREQMHZ" VALUE="600"/>
         <PARAMETER NAME="PSU__CRF_APB__TOPSW_MAIN_CTRL__FREQMHZ" VALUE="533.33"/>
@@ -3808,9 +3808,9 @@
         <PARAMETER NAME="C_HIGHADDR" VALUE="0xFFFFFFFF"/>
       </PARAMETERS>
       <PORTS>
-        <PORT CLKFREQUENCY="300000000" DIR="I" NAME="maxihpm0_fpd_aclk" SIGIS="clk" SIGNAME="zynq_ultra_ps_e_0_pl_clk0">
+        <PORT CLKFREQUENCY="300000000" DIR="I" NAME="maxihpm0_fpd_aclk" SIGIS="clk" SIGNAME="zynq_ultra_ps_e_0_pl_clk2">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="zynq_ultra_ps_e_0" PORT="pl_clk0"/>
+            <CONNECTION INSTANCE="zynq_ultra_ps_e_0" PORT="pl_clk2"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="15" NAME="maxigp0_awid" RIGHT="0" SIGIS="undef" SIGNAME="ps8_0_axi_periph_S00_AXI_awid">
@@ -4008,9 +4008,9 @@
             <CONNECTION INSTANCE="ps8_0_axi_periph" PORT="S00_AXI_arqos"/>
           </CONNECTIONS>
         </PORT>
-        <PORT CLKFREQUENCY="300000000" DIR="I" NAME="saxihp0_fpd_aclk" SIGIS="clk" SIGNAME="zynq_ultra_ps_e_0_pl_clk0">
+        <PORT CLKFREQUENCY="300000000" DIR="I" NAME="saxihp0_fpd_aclk" SIGIS="clk" SIGNAME="zynq_ultra_ps_e_0_pl_clk2">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="zynq_ultra_ps_e_0" PORT="pl_clk0"/>
+            <CONNECTION INSTANCE="zynq_ultra_ps_e_0" PORT="pl_clk2"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" NAME="saxigp2_aruser" SIGIS="undef"/>
@@ -4190,7 +4190,9 @@
             <CONNECTION INSTANCE="rst_ps8_0_300M" PORT="ext_reset_in"/>
           </CONNECTIONS>
         </PORT>
-        <PORT CLKFREQUENCY="300000000" DIR="O" NAME="pl_clk0" SIGIS="clk" SIGNAME="zynq_ultra_ps_e_0_pl_clk0">
+        <PORT CLKFREQUENCY="100000000" DIR="O" NAME="pl_clk0" SIGIS="clk"/>
+        <PORT CLKFREQUENCY="25000000" DIR="O" NAME="pl_clk1" SIGIS="clk"/>
+        <PORT CLKFREQUENCY="300000000" DIR="O" NAME="pl_clk2" SIGIS="clk" SIGNAME="zynq_ultra_ps_e_0_pl_clk2">
           <CONNECTIONS>
             <CONNECTION INSTANCE="ps8_0_axi_periph" PORT="ACLK"/>
             <CONNECTION INSTANCE="zynq_ultra_ps_e_0" PORT="maxihpm0_fpd_aclk"/>
@@ -4202,6 +4204,7 @@
             <CONNECTION INSTANCE="zynq_ultra_ps_e_0" PORT="saxihp0_fpd_aclk"/>
           </CONNECTIONS>
         </PORT>
+        <PORT CLKFREQUENCY="375000000" DIR="O" NAME="pl_clk3" SIGIS="clk"/>
       </PORTS>
       <BUSINTERFACES>
         <BUSINTERFACE BUSNAME="zynq_ultra_ps_e_0_M_AXI_HPM0_FPD" DATAWIDTH="128" NAME="M_AXI_HPM0_FPD" TYPE="MASTER" VLNV="xilinx.com:interface:aximm:1.0">
@@ -4230,7 +4233,7 @@
           <PARAMETER NAME="SUPPORTS_NARROW_BURST" VALUE="1"/>
           <PARAMETER NAME="MAX_BURST_LENGTH" VALUE="256"/>
           <PARAMETER NAME="PHASE" VALUE="0.000"/>
-          <PARAMETER NAME="CLK_DOMAIN" VALUE="procsys_zynq_ultra_ps_e_0_0_pl_clk0"/>
+          <PARAMETER NAME="CLK_DOMAIN" VALUE="procsys_zynq_ultra_ps_e_0_0_pl_clk2"/>
           <PARAMETER NAME="NUM_READ_THREADS" VALUE="4"/>
           <PARAMETER NAME="NUM_WRITE_THREADS" VALUE="4"/>
           <PARAMETER NAME="RUSER_BITS_PER_BYTE" VALUE="0"/>
@@ -4304,7 +4307,7 @@
           <PARAMETER NAME="SUPPORTS_NARROW_BURST" VALUE="0"/>
           <PARAMETER NAME="MAX_BURST_LENGTH" VALUE="128"/>
           <PARAMETER NAME="PHASE" VALUE="0.000"/>
-          <PARAMETER NAME="CLK_DOMAIN" VALUE="procsys_zynq_ultra_ps_e_0_0_pl_clk0"/>
+          <PARAMETER NAME="CLK_DOMAIN" VALUE="procsys_zynq_ultra_ps_e_0_0_pl_clk2"/>
           <PARAMETER NAME="NUM_READ_THREADS" VALUE="1"/>
           <PARAMETER NAME="NUM_WRITE_THREADS" VALUE="1"/>
           <PARAMETER NAME="RUSER_BITS_PER_BYTE" VALUE="0"/>
